@@ -2,44 +2,28 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
-      dark
+      color="#FFFC"
+      elevate-on-scroll="true"
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+      <h2 class="pr-5">bootware.org</h2>
+      <v-spacer/>
+      <v-btn href="#profile" text>Profile</v-btn>
+      <v-btn href="#works" text>Works</v-btn>
+      <v-btn href="#results" text>Results</v-btn>
+      <v-btn href="https://github.com/bootware-whitebox/" target="_blank" text>GitHub</v-btn>
+      <v-btn href="#contact" text>Contact</v-btn>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
 
-    <v-main>
+    <v-main transition="fade-transition">
       <HelloWorld/>
     </v-main>
+
+    <v-footer color="white">
+      <span class="mt-10 font-weight-regular">
+        &copy; 2020 Bootware.
+      </span>
+    </v-footer>
   </v-app>
 </template>
 
@@ -55,7 +39,7 @@ export default Vue.extend({
   },
 
   data: () => ({
-    //
+    // NOP
   }),
 });
 </script>
