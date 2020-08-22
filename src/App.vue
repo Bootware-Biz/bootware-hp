@@ -16,18 +16,13 @@
 
     </v-app-bar>
 
-    <v-row
-            align="center"
-            justify="center"
-    >
-      <v-main transition="fade-transition">
-        <HelloWorld/>
-      </v-main>
-    </v-row>
+    <transition mode="out-in">
+      <HelloWorld/>
+    </transition>
 
-    <v-footer v-if="false" color="white">
+    <v-footer v-if="true" color="white" class="justify-center">
       <span class="mt-10 font-weight-regular">
-        &copy; 2020 Bootware.
+        <v-card-text>&copy; 2020 <a href="https://www.bootware.org/">Bootware</a></v-card-text>
       </span>
     </v-footer>
 
@@ -54,5 +49,23 @@ export default Vue.extend({
 <style lang="less">
   a {
     text-decoration: none;
+  }
+  .v-enter {
+    opacity: 0;
+  }
+  .v-enter-active {
+    transition: opacity 1s
+  }
+  .v-enter-to {
+    opacity: 1;
+  }
+  .v-leave {
+    opacity: 1;
+  }
+  .v-leave-active {
+    transition: opacity 1s
+  }
+  .v-leave-to {
+    opacity: 0;
   }
 </style>
