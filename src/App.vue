@@ -1,11 +1,12 @@
 <template>
   <v-app>
     <v-app-bar
-      app
-      color="#FFFC"
-      elevate-on-scroll="true"
+            v-if="false"
+            app
+            color="#FFF0"
+            elevation="0"
     >
-      <h2 class="pr-5">bootware.org</h2>
+      <h2 class="pr-5">bootware</h2>
       <v-spacer/>
       <v-btn href="#profile" text>Profile</v-btn>
       <v-btn href="#works" text>Works</v-btn>
@@ -15,15 +16,21 @@
 
     </v-app-bar>
 
-    <v-main transition="fade-transition">
-      <HelloWorld/>
-    </v-main>
+    <v-row
+            align="center"
+            justify="center"
+    >
+      <v-main transition="fade-transition">
+        <HelloWorld/>
+      </v-main>
+    </v-row>
 
-    <v-footer color="white">
+    <v-footer v-if="false" color="white">
       <span class="mt-10 font-weight-regular">
         &copy; 2020 Bootware.
       </span>
     </v-footer>
+
   </v-app>
 </template>
 
@@ -43,3 +50,9 @@ export default Vue.extend({
   }),
 });
 </script>
+
+<style lang="less">
+  a {
+    text-decoration: none;
+  }
+</style>

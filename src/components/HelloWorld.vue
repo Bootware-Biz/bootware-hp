@@ -1,41 +1,48 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
 
-  <v-container>
-    <v-row class="text-center">
+  <v-container v-if="true" bg fill-height grid-list-md text-xs-center>
+    <v-layout row wrap align-center>
+      <v-flex>
+        <v-card light elevation="0" class="pa-10" width="35em">
+          <h1 class="align-center display-2 font-weight-bold">
+            Bootware
+          </h1>
+          <v-card-text>
+            私たち Bootware は、IT のシステム開発事業を行なっております。<br/>
+            <b>高い技術力</b>で<b>洗練</b>されたシステムを開発します。
+          </v-card-text>
+          <v-card-text class="ml-2">
+            <b>contact</b>
+            <br/>
+            info@bootware.org
+          </v-card-text>
+          <v-card-text class="text-right">
+            2020 &copy; <a href="https://www.bootware.org/">Bootware</a>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Bootware's Portfolio
-        </h1>
+  <v-container v-else-if="false">
+    <v-col class="pa-2">
 
-        <p class="subheading font-weight-regular">
-          This page is a portfolio of bootware.
-        </p>
-      </v-col>
-
-      <v-col
-              class="mb-5"
-              cols="12"
-      >
-        <h2 id="profile" class="headline font-weight-bold mb-3">
-          Profile
+      <v-card elevation="0" class="pa-10">
+        <h2 id="profile" class="headline font-weight-bold">
+          About Me
         </h2>
 
         <v-row justify="center">
           <ul class="text-left">
-            <li>Name: Kakeru</li>
             <li>Age: Late 20s</li>
             <li>Job: Architect Developer</li>
             <li>Location: Tokyo Minato-Ku</li>
             <li>Primary Skill: Java, Spring</li>
           </ul>
         </v-row>
-      </v-col>
+      </v-card>
 
-      <v-col
-              class="mb-5"
-              cols="12"
-      >
+      <v-card elevation="0" class="pa-10">
         <h2 id="works" class="headline font-weight-bold mb-3">
           Works
         </h2>
@@ -56,12 +63,9 @@
             </ul>
           </v-card>
         </v-row>
-      </v-col>
+      </v-card>
 
-      <v-col
-              class="mb-5"
-              cols="12"
-      >
+      <v-card elevation="0" class="pa-10">
         <h2 class="headline font-weight-bold mb-3">
           Results
         </h2>
@@ -103,21 +107,18 @@
 
           </v-list>
         </v-row>
-      </v-col>
+      </v-card>
 
-      <v-col
-              class="mb-5"
-              cols="12"
-      >
+      <v-card elevation="0" class="pa-10">
         <h2 class="headline font-weight-bold mb-3">
           Contact
         </h2>
 
         <v-row justify="center">
-          info@bootware.org
+          info@bootware
         </v-row>
-      </v-col>
-    </v-row>
+      </v-card>
+    </v-col>
   </v-container>
 
 </template>
