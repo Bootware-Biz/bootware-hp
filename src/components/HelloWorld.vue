@@ -4,7 +4,7 @@
     <v-layout row wrap align-center>
       <v-flex>
         <v-row justify="center" align-content="center">
-          <v-card elevation="0" class="pa-10" width="35em">
+          <v-card elevation="0" class="px-10" width="35em">
 
             <h1 class="align-center display-2 font-weight-bold teal--text text--lighten-1">
               Bootware

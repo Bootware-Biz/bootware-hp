@@ -16,12 +16,15 @@
 
     </v-app-bar>
 
-    <transition mode="out-in">
-      <HelloWorld/>
-    </transition>
+    <v-main>
 
-    <v-footer v-if="true" color="white" class="justify-center">
-      <span class="mt-10 font-weight-regular">
+      <transition mode="in">
+        <HelloWorld/>
+      </transition>
+    </v-main>
+
+    <v-footer app color="#FFF0" class="justify-center">
+      <span class="font-weight-regular">
         <v-card-text>&copy; 2020 <a href="https://www.bootware.org/">Bootware</a></v-card-text>
       </span>
     </v-footer>
